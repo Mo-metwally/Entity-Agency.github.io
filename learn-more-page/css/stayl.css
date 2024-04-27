@@ -1,0 +1,183 @@
+:root {
+    --main-color: #041941;
+    --sce-color: #F59744;
+    --bg: #04132e;
+    --border: rgba(255, 255, 255, 0.2) 0.6px solid;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: 0.2s linear;
+    color: white;
+}
+
+html {
+    font-size: 14px;
+    overflow-x: none;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+    list-style: none;
+}
+
+section {
+    padding: 2rem 7%;
+}
+
+.z1 {
+    z-index: 999;
+}
+
+
+html::-webkit-scrollbar {
+    width: 1.2vw;
+
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: #F59744;
+    border-radius: 100vw;
+    border: 0.25em solid rgba(1, 22, 64);
+}
+
+html::-webkit-scrollbar-thumb:hover {
+    background-color: #ff7700;
+}
+
+html::-webkit-scrollbar-track {
+    background: rgba(1, 22, 64);
+    margin: 14px 0 14px 0;
+}
+
+a {
+    color: white;
+}
+
+
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    background: var(--main-color);
+    height: auto;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin: 0;
+    color: #04132e;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    margin: 0;
+    color: #041941;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+main {
+    max-width: 900PX;
+    margin: auto;
+    box-shadow: 30px 0px 40px rgba(245, 151, 68, 0.15),
+    -30px 0px 40px rgba(245, 151, 68, 0.15);
+}
+
+#landing {
+    background: #ffffff;
+}
+
+
+
+#landing-text {
+    display: flex;
+    flex: 0 1 40vw ;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+#landing-text h2 {
+    color: #041941;
+}
+
+#landing-image {
+    background: url(../img/about\ us.jpg) no-repeat center center/cover;
+    height: 50vh;
+    flex: 0 1 60vw;
+    margin: 0;
+  }
+
+.btn {
+    padding: 0.5rem 2rem;
+    border: var(--border);
+    display: inline-block;
+    margin: 2rem 0 0;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    background: var(--sce-color);
+    transition: background 500ms ease;
+    
+}
+
+.btn:hover {
+    background: var(--bg);
+}
+
+#header {
+    padding: 1.5rem;
+    text-align: center;
+    background:var(--sce-color) ;
+    color: #ffffff;
+}
+
+#header h2 {
+    display: inline-block;
+    padding: 0.9rem 1rem;
+}
+
+.caption {
+    padding: 1.4rem;
+    text-align: center;
+    background-color: var(--sce-color);
+}
+
+
+@media(min-width:500px) {
+    #landing {
+        display: flex;
+        height: 100%;
+    }
+
+    #landing-text {
+        height: 100vh;
+    }
+    #landing-image {
+        height: 100vh;
+    }
+}
+
+@media(min-width:720px) {
+    .btn {
+        padding: 1rem 3rem;
+    }
+}
+
+
+
